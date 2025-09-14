@@ -1,0 +1,138 @@
+# =========================================
+# .gitignore pour Alpine Bar Website
+# =========================================
+
+# === Développement Local ===
+# Logs du serveur de développement
+logs/
+*.log
+
+# Backups automatiques
+backups/
+*.backup
+*.bak
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# === Fichiers de Debug ===
+debug/
+test-*.html
+debug.html
+*.debug.js
+*.debug.css
+
+# === Environnement ===
+# Variables d'environnement (si utilisées plus tard)
+.env
+.env.local
+.env.production
+.env.staging
+
+# === Docker (développement) ===
+# Logs Docker
+docker-logs/
+.docker/
+
+# === Éditeurs & IDEs ===
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# WebStorm / IntelliJ
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# === Système ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# === Build & Deployment ===
+# Fichiers de build (si ajoutés plus tard)
+dist/
+build/
+.cache/
+
+# Minification temporaire
+*.min.js.map
+*.min.css.map
+
+# === Analytics & Monitoring ===
+# Fichiers de test analytics (éviter de les commiter)
+analytics-test.html
+ga-debug.html
+
+# === Documentation générée ===
+# Si on ajoute une génération automatique de docs
+docs/generated/
+
+# === Node.js (si ajouté plus tard) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Python (pour les scripts utilitaires) ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# === Archives & Compressions ===
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# === Certificats SSL (si ajoutés) ===
+*.pem
+*.key
+*.crt
+*.csr
+
+# === Fichiers de configuration sensibles ===
+# Configuration serveur (si créés)
+*.conf.local
+*.conf.private
+
+# === Statistiques & Rapports ===
+# Rapports lighthouse/audit (si générés)
+lighthouse-reports/
+audit-reports/
+
+# Garder ces fichiers dans le repository:
+# - *.html (toutes les pages)
+# - *.css (styles)
+# - *.js (scripts)
+# - *.svg, *.png, *.jpg (assets)
+# - *.md (documentation)
+# - nginx.conf, *.sh (configuration et déploiement)

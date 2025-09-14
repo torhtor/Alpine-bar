@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  alpine-bar-web:
+    image: nginx:alpine
+    container_name: alpine-bar-dev
+    ports:
+      - "8081:80"
+    volumes:
+      # Volume direct - changements instantanés !
+      - .:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped
+    networks:
+      - alpine-network
+
+networks:
+  alpine-network:
+    driver: bridge
+    name: alpine-bar-network

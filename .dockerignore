@@ -1,0 +1,38 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de développement
+*.log
+logs/
+.git/
+.gitignore
+
+# Documentation de développement
+CLAUDE.md
+README*.md
+
+# Fichiers temporaires
+*.tmp
+*.swp
+*.swo
+*~
+
+# Dossiers de build (si présents)
+node_modules/
+dist/
+build/
+
+# Certificats et clés (sécurité)
+*.pem
+*.key
+*.crt
+
+# Fichiers de configuration Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
