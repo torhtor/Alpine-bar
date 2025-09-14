@@ -1,0 +1,38 @@
+🔍 MONITORING SETUP - Alpine Bar
+==============================
+
+1. UPTIME MONITORING (gratuit)
+   → Aller sur : https://uptimerobot.com
+   → Créer compte gratuit
+   → Add Monitor :
+     - Type: HTTP(s)
+     - URL: https://www.alpine-bar.com
+     - Interval: 5 minutes
+     - Alert Contacts: votre email
+   
+   ✅ Résultat : Alerte email si site down
+
+2. GOOGLE SEARCH CONSOLE (gratuit)
+   → Aller sur : https://search.google.com/search-console
+   → Ajouter propriété : alpine-bar.com
+   → Vérifier avec balise meta ou DNS
+   → Soumettre sitemap.xml
+   
+   ✅ Résultat : Monitoring SEO et erreurs Google
+
+3. CLOUDFLARE CDN (optionnel, gratuit)
+   → Aller sur : https://cloudflare.com
+   → Ajouter site : alpine-bar.com
+   → Changer DNS chez votre registrar
+   
+   ✅ Résultat : Site plus rapide + protection DDoS
+
+4. ANALYTICS MONITORING
+   → dashboard : https://analytics.google.com
+   → Vérifier data arrive bien
+   → Configurer alertes si trafic chute
+   
+   ✅ Résultat : Suivi du trafic en temps réel
+
+TEMPS TOTAL SETUP : ~30 minutes
+COÛT : 0€
