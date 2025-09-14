@@ -1,0 +1,41 @@
+# Fichiers essentiels pour la production (à déployer)
+
+## Pages HTML principales
+index.html
+contact.html
+menu.html
+findus.html
+actualites.html
+privacy-policy.html
+google-site-verification.html
+
+## Pages anglaises
+en/index.html
+en/contact.html
+en/menu.html
+en/location.html
+en/news.html
+en/privacy-policy.html
+
+## Composants partagés
+en/header.html
+en/footer.html
+header.html
+footer.html
+
+## Assets
+styles.css
+script.js
+en/script.js
+cookie-banner.js
+reviews-widget.js
+sitemap.xml
+
+## Logo & favicon
+logo/Alpine-logo-black.svg
+logo/Alpine-logo-deep-brown.svg
+logo/Alpine-logo-light-brown.svg
+logo/favicon.svg
+
+## Configuration serveur
+nginx.conf

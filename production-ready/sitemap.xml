@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://www.alpine-bar.com/</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Alpine Bar - Logo</image:title>
+            <image:caption>Alpine Bar Annecy - Bar à cocktails d'exception</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Page index.html -->
+    <url>
+        <loc>https://www.alpine-bar.com/index.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Alpine Bar - Logo</image:title>
+            <image:caption>Alpine Bar Annecy - Bar à cocktails d'exception</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Page menu -->
+    <url>
+        <loc>https://www.alpine-bar.com/menu.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Menu Alpine Bar</image:title>
+            <image:caption>Cocktails signatures Alpine Bar - Christian Drouin Calvados</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Page actualités -->
+    <url>
+        <loc>https://www.alpine-bar.com/actualites.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Actualités Alpine Bar</image:title>
+            <image:caption>Ouverture octobre 2025 - Partenariats exclusifs</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Page nous trouver -->
+    <url>
+        <loc>https://www.alpine-bar.com/findus.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Adresse Alpine Bar</image:title>
+            <image:caption>123 Rue des Alpes, 74000 Annecy - Centre historique</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Page contact -->
+    <url>
+        <loc>https://www.alpine-bar.com/contact.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Contact Alpine Bar</image:title>
+            <image:caption>Équipe Alpine Bar - contact@alpine-bar.com</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- English Pages -->
+    <url>
+        <loc>https://www.alpine-bar.com/en/</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Alpine Bar - Logo</image:title>
+            <image:caption>Alpine Bar Annecy - Exceptional Cocktail Bar</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/en/index.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Alpine Bar - Logo</image:title>
+            <image:caption>Alpine Bar Annecy - Exceptional Cocktail Bar</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/en/menu.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Alpine Bar Menu</image:title>
+            <image:caption>Signature cocktails Alpine Bar - Christian Drouin Calvados</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/en/news.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Alpine Bar News</image:title>
+            <image:caption>October 2025 opening - Exclusive partnerships</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/en/location.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Alpine Bar Address</image:title>
+            <image:caption>123 Rue des Alpes, 74000 Annecy - Historic center</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/en/contact.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
+            <image:title>Contact Alpine Bar</image:title>
+            <image:caption>Alpine Bar team - contact@alpine-bar.com</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Logos principaux -->
+    <url>
+        <loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/logo/alpine-logo-horizontal.svg</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/logo/alpine-pictogram.svg</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.alpine-bar.com/logo/favicon.svg</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.2</priority>
+    </url>
+    
+</urlset>
