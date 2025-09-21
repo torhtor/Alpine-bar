@@ -13,6 +13,10 @@
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="DAVaD75AmrHSjjC6YknH1gud0obya5649CcS_fwbzRU" />
+
+    <!-- Security Headers handled by .htaccess -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Alpine Bar Annecy | Bar à Cocktails d'Exception dans les Alpes">
@@ -61,8 +65,8 @@
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-49Z27M7V6G"></script>
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS Design System -->
+    <link rel="stylesheet" href="alpine-design-system.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -112,42 +116,38 @@
     </script>
 </head>
 <body class="home-page">
-    <!-- Opening Status Banner -->
-    <div class="opening-status coming-soon" id="opening-status">
-        🏔️ Ouverture prévue en octobre 2025 • Suivez nos actualités pour ne rien manquer ! 🍸
-    </div>
 
     <!-- Header -->
     <div id="header-placeholder"></div>
 
-    <main id="main-content">
+    <main class="container">
         <!-- Hero Section -->
         <section class="hero">
             <h1 class="sr-only">Alpine Bar Annecy - Bar à Cocktails d'Exception</h1>
-            <h2>Alpine Bar</h2>
-            <p class="subtitle">Bar à cocktails d'exception au cœur des Alpes</p>
-            <p>Découvrez l'art de la mixologie alpine dans un cadre raffiné. Nos cocktails signatures allient savoir-faire artisanal et produits locaux d'exception, pour une expérience gustative unique à Annecy.</p>
+            <h2 class="text-display">Alpine Bar</h2>
+            <p class="text-body--lg mb-4">Bar à cocktails d'exception au cœur des Alpes</p>
+            <p class="text-body">Découvrez l'art de la mixologie alpine dans un cadre raffiné. Nos cocktails signatures allient savoir-faire artisanal et produits locaux d'exception, pour une expérience gustative unique à Annecy.</p>
         </section>
 
         <!-- About Section -->
-        <section class="section about" id="about">
-            <h2 class="home-about-title">Notre Vision</h2>
-            <div class="home-about-center">
-                <h3 class="home-about-subtitle">Une ambition : proposer des cocktails dignes de ce nom autour de produits régionaux.</h3>
-                <p class="home-about-description">Alpine Bar incarne l'excellence de la mixologie française dans un écrin alpin. Mickaël barman passionné et Pierre cuisto de talent, ont à cœur de créer des recettes d'exception en utilisant exclusivement des produits locaux : spiritueux artisanaux de Haute-Savoie, plantes aromatiques des Alpes, et ingrédients sourcés dans un rayon de 50 kilomètres.</p>
-                
-                <div class="home-features-grid">
-                    <div class="home-feature-item">
-                        <h4>📍 Localisation</h4>
-                        <p>Cœur historique d'Annecy<br>Haute-Savoie, Alpes françaises</p>
+        <section class="card card--primary" id="about">
+            <div class="stack stack--lg text-center">
+                <h2 class="text-headline">Notre Vision</h2>
+                <h3 class="text-title">Une ambition : proposer des cocktails dignes de ce nom autour de produits régionaux.</h3>
+                <p class="text-body--lg center">Alpine Bar incarne l'excellence de la mixologie française dans un écrin alpin. Mickaël barman passionné et Pierre cuisto de talent, ont à cœur de créer des recettes d'exception en utilisant exclusivement des produits locaux : spiritueux artisanaux de Haute-Savoie, plantes aromatiques des Alpes, et ingrédients sourcés dans un rayon de 50 kilomètres.</p>
+
+                <div class="grid grid--3 mt-8">
+                    <div class="card card--outline text-center">
+                        <h4 class="text-subtitle">📍 Localisation</h4>
+                        <p class="text-body">Cœur historique d'Annecy<br>Haute-Savoie, Alpes françaises</p>
                     </div>
-                    <div class="home-feature-item">
-                        <h4>🍸 Philosophie</h4>
-                        <p>Produits locaux & fait maison<br>Démarche éco-responsable</p>
+                    <div class="card card--outline text-center">
+                        <h4 class="text-subtitle">🍸 Philosophie</h4>
+                        <p class="text-body">Produits locaux & fait maison<br>Démarche éco-responsable</p>
                     </div>
-                    <div class="home-feature-item">
-                        <h4>🏔️ Inspiration</h4>
-                        <p>Terroir alpin authentique<br>Excellence & raffinement</p>
+                    <div class="card card--outline text-center">
+                        <h4 class="text-subtitle">🏔️ Inspiration</h4>
+                        <p class="text-body">Terroir alpin authentique<br>Excellence & raffinement</p>
                     </div>
                 </div>
             </div>
@@ -155,56 +155,89 @@
 
 
         <!-- Preview Section -->
-        <section class="section preview home-preview" id="preview" role="button" tabindex="0" onclick="window.location.href='menu.html'" onkeypress="if(event.key==='Enter' || event.key===' '){window.location.href='menu.html'}" aria-label="Voir notre carte complète de cocktails">
-            <div class="home-preview-arrow">→</div>
-            
-            <h2 class="home-preview-title"><span aria-hidden="true">🍸</span> Un Avant-Goût</h2>
-            <p class="home-preview-subtitle">Découvrez nos créations signatures</p>
-            
-            <div class="cocktail-grid">
-                <div class="cocktail-category home-cocktail-category">
-                    <h3>Cocktails Signatures</h3>
-                    <div class="cocktail-item home-cocktail-item">
-                        <div class="cocktail-info">
-                            <h4>Alpine Spritz</h4>
-                            <p>Génépi maison, vermouth, crémant de Savoie</p>
-                        </div>
-                        <span class="cocktail-price home-cocktail-price">12€</span>
-                    </div>
-                    <div class="cocktail-item home-cocktail-item">
-                        <div class="cocktail-info">
-                            <h4>Reblochon Tart</h4>
-                            <p>Vodka à la poire, reblochon, miel, romarin</p>
-                        </div>
-                        <span class="cocktail-price home-cocktail-price">14€</span>
-                    </div>
-                    <div class="cocktail-item home-cocktail-item">
-                        <div class="cocktail-info">
-                            <h4>Mont Blanc</h4>
-                            <p>Distillat de pistache, chocolat blanc, crème</p>
-                        </div>
-                        <span class="cocktail-price home-cocktail-price">14€</span>
-                    </div>
+        <section class="card card--primary card--interactive" id="preview" role="button" tabindex="0" onclick="window.location.href='menu.html'" onkeypress="if(event.key==='Enter' || event.key===' '){window.location.href='menu.html'}" aria-label="Voir notre carte complète de cocktails">
+            <div class="relative">
+                <div class="absolute" style="top: 1rem; right: 1rem;">
+                    <span class="arrow">→</span>
                 </div>
-                
-                <div class="cocktail-category home-cocktail-category">
-                    <h3>Collaboration Prestige</h3>
-                    <div class="cocktail-item home-cocktail-item">
-                        <div class="cocktail-info">
-                            <h4>Calvados Christian Drouin</h4>
-                            <p>Partenariat exclusif avec la célèbre maison normande</p>
+
+                <div class="stack text-center mb-8">
+                    <h2 class="text-headline"><span aria-hidden="true">🍸</span> Un Avant-Goût</h2>
+                    <p class="text-body--lg">Découvrez nos créations signatures</p>
+                </div>
+
+                <div class="grid grid--2">
+                    <div class="card card--secondary">
+                        <h3 class="text-title mb-4">Cocktails Signatures</h3>
+                        <div class="product-grid">
+                            <div class="product-item">
+                                <div class="product-info">
+                                    <h4>Alpine Spritz</h4>
+                                    <p>Génépi maison, vermouth, crémant de Savoie</p>
+                                </div>
+                                <span class="product-price">12€</span>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-info">
+                                    <h4>Reblochon Tart</h4>
+                                    <p>Vodka à la poire, reblochon, miel, romarin</p>
+                                </div>
+                                <span class="product-price">14€</span>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-info">
+                                    <h4>Mont Blanc</h4>
+                                    <p>Distillat de pistache, chocolat blanc, crème</p>
+                                </div>
+                                <span class="product-price">14€</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cocktail-item home-cocktail-item">
-                        <div class="cocktail-info">
-                            <h4>Plateau Dégustation</h4>
-                            <p>VSOP, XO, Réserve Pays d'Auge</p>
+
+                    <div class="card card--secondary">
+                        <h3 class="text-title mb-4">Collaboration Prestige</h3>
+                        <div class="product-grid">
+                            <div class="product-item">
+                                <div class="product-info">
+                                    <h4>Calvados Christian Drouin</h4>
+                                    <p>Partenariat exclusif avec la célèbre maison normande</p>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-info">
+                                    <h4>Plateau Dégustation</h4>
+                                    <p>VSOP, XO, Réserve Pays d'Auge</p>
+                                </div>
+                                <span class="product-price">16€</span>
+                            </div>
                         </div>
-                        <span class="cocktail-price home-cocktail-price">16€</span>
                     </div>
                 </div>
             </div>
-            
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="card card--primary" id="news">
+            <h2 class="text-headline text-center mb-8">🌏 Dernières Actualités</h2>
+            <div class="stack stack--lg">
+                <article class="card card--secondary">
+                    <div class="stack stack--sm mb-4">
+                        <h3 class="text-title">Voyage Initiatique en Asie & Collaboration Kian Séoul</h3>
+                        <span class="text-caption">27 septembre 2024</span>
+                    </div>
+                    <div class="news-content">
+                        <p>
+                            Mickaël, notre head bartender, s'est lancé dans un voyage d'un mois en Asie : <strong>3 semaines au Japon et 1 semaine en Corée du Sud</strong> pour explorer les établissements les plus prestigieux. De la distillerie <strong>KI NO BI à Kyoto</strong> au légendaire <strong>Zest à Séoul</strong>, ce voyage s'est terminé par un guest event exceptionnel chez <strong>Kian</strong>.
+                        </p>
+                        <div class="news-images">
+                            <img src="img/kian/kian1.jpg" alt="Guest event chez Kian" class="news-img">
+                            <img src="img/kian/kian3.jpg" alt="Collaboration Kian Seoul" class="news-img">
+                            <img src="img/kian/kian5.jpg" alt="Mixologie asiatique" class="news-img">
+                        </div>
+                        <a href="actualites.html" class="link--btn">Découvrir toute l'actualité →</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
