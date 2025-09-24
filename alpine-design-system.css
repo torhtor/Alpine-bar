@@ -57,7 +57,7 @@
     --space-12: 3rem;      /* 48px */
     --space-16: 4rem;      /* 64px */
     --space-20: 5rem;      /* 80px */
-    --space-30: 7.5rem;    /* 120px */
+    --space-30: 12.5rem;   /* 200px */
 
     /* Border Radius */
     --radius-sm: 0.5rem;   /* 8px */
@@ -152,6 +152,28 @@ main.container {
     margin-top: var(--space-30);
 }
 
+/* Ajustement des marges sur mobile - garder espacement suffisant */
+@media (max-width: 767px) {
+    body {
+        padding-top: 80px;
+    }
+
+    main.container {
+        margin-top: var(--space-30); /* Garder les 200px d'origine */
+    }
+}
+
+/* Ajustement pour très petits écrans - padding-top à 0 */
+@media (max-width: 480px) {
+    body {
+        padding-top: 0;
+    }
+
+    main.container {
+        margin-top: var(--space-30); /* Garder les 200px */
+    }
+}
+
 .container--sm { max-width: 640px; }
 .container--md { max-width: 768px; }
 .container--lg { max-width: 1024px; }
@@ -177,7 +199,7 @@ main.container {
 /* Grid */
 .grid {
     display: grid;
-    gap: var(--space-6);
+    gap: var(--space-12);
 }
 
 .grid--auto { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
@@ -316,6 +338,11 @@ a:focus {
 
 .link--no-underline {
     text-decoration: none;
+}
+
+.header__main .link--no-underline {
+    display: block;
+    margin-bottom: var(--space-6);
 }
 
 /* Button-style links */
@@ -709,12 +736,6 @@ a:focus {
 }
 
 /* Logo */
-.logo {
-    height: 60px;
-    width: auto;
-    transition: opacity 0.2s ease;
-}
-
 .logo:hover {
     opacity: 0.8;
 }
@@ -897,7 +918,7 @@ a:focus {
     background: var(--color-secondary);
     color: var(--alpine-white);
     text-align: center;
-    padding: var(--space-4) 0;
+    padding: var(--space-6) 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -973,10 +994,11 @@ a:focus {
 }
 
 .logo {
-    height: 60px;
+    height: 120px;
     width: auto;
-    margin: 0 auto var(--space-2) auto;
+    margin: 0 auto var(--space-4) auto;
     display: block;
+    transition: opacity 0.2s ease;
 }
 
 .logo.inverted {

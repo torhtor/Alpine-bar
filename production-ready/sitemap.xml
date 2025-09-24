@@ -5,20 +5,7 @@
     <!-- Page d'accueil -->
     <url>
         <loc>https://www.alpine-bar.com/</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
-            <image:title>Alpine Bar - Logo</image:title>
-            <image:caption>Alpine Bar Annecy - Bar à cocktails d'exception</image:caption>
-        </image:image>
-    </url>
-    
-    <!-- Page index.html -->
-    <url>
-        <loc>https://www.alpine-bar.com/index.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -31,7 +18,7 @@
     <!-- Page menu -->
     <url>
         <loc>https://www.alpine-bar.com/menu.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -44,7 +31,7 @@
     <!-- Page actualités -->
     <url>
         <loc>https://www.alpine-bar.com/actualites.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <image:image>
@@ -57,7 +44,7 @@
     <!-- Page nous trouver -->
     <url>
         <loc>https://www.alpine-bar.com/findus.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
         <image:image>
@@ -70,7 +57,7 @@
     <!-- Page contact -->
     <url>
         <loc>https://www.alpine-bar.com/contact.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <image:image>
@@ -83,19 +70,7 @@
     <!-- English Pages -->
     <url>
         <loc>https://www.alpine-bar.com/en/</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</image:loc>
-            <image:title>Alpine Bar - Logo</image:title>
-            <image:caption>Alpine Bar Annecy - Exceptional Cocktail Bar</image:caption>
-        </image:image>
-    </url>
-    
-    <url>
-        <loc>https://www.alpine-bar.com/en/index.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -107,7 +82,7 @@
     
     <url>
         <loc>https://www.alpine-bar.com/en/menu.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <image:image>
@@ -119,7 +94,7 @@
     
     <url>
         <loc>https://www.alpine-bar.com/en/news.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
         <image:image>
@@ -131,7 +106,7 @@
     
     <url>
         <loc>https://www.alpine-bar.com/en/location.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
         <image:image>
@@ -143,7 +118,7 @@
     
     <url>
         <loc>https://www.alpine-bar.com/en/contact.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <image:image>
@@ -153,31 +128,47 @@
         </image:image>
     </url>
     
+    <!-- Page privacy policy FR -->
+    <url>
+        <loc>https://www.alpine-bar.com/privacy-policy.html</loc>
+        <lastmod>2025-09-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- Page privacy policy EN -->
+    <url>
+        <loc>https://www.alpine-bar.com/en/privacy-policy.html</loc>
+        <lastmod>2025-09-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
     <!-- Logos principaux -->
     <url>
         <loc>https://www.alpine-bar.com/logo/alpine-logo-vertical.svg</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     
     <url>
         <loc>https://www.alpine-bar.com/logo/alpine-logo-horizontal.svg</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     
     <url>
         <loc>https://www.alpine-bar.com/logo/alpine-pictogram.svg</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     
     <url>
         <loc>https://www.alpine-bar.com/logo/favicon.svg</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.2</priority>
     </url>

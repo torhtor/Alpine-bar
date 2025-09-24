@@ -55,7 +55,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-49Z27M7V6G"></script>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../alpine-design-system.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -87,23 +87,76 @@
     <!-- Header -->
     <div id="header-placeholder"></div>
 
-    <main id="main-content">
-        <div class="page-card">
-            
-            <!-- Hero Section -->
-            <section class="section-centered">
-                <h1 class="hero-title hero-title--large">Alpine Bar News</h1>
-                <p class="hero-subtitle hero-subtitle--medium">Follow our journey to excellence</p>
-            </section>
+    <main class="container" id="main-content">
+        <div class="card card--primary text-center mb-8">
+            <h1 class="text-display">Alpine Bar News</h1>
+            <p class="text-body--lg">Follow our journey to excellence</p>
+        </div>
 
-            <!-- News Timeline -->
-            <div class="news-timeline">
-                
-                <!-- News 1 - Opening -->
-                <article class="bg-subtle card-lg card-border-left">
-                    <div class="header-flex">
-                        <h2 class="section-title--medium">🏔️ Confirmed Opening - October 2025</h2>
-                        <span class="date-small">January 15, 2025</span>
+        <!-- News Timeline -->
+        <div class="stack stack--lg">
+
+                <!-- News 1 - Asia Journey & Kian Guest -->
+                <article class="card card--primary">
+                    <div class="stack stack--sm mb-4">
+                        <h2 class="text-headline">🌏 Initiatory Journey in Asia & Kian Seoul Collaboration</h2>
+                        <span class="text-caption">September 27, 2024</span>
+                    </div>
+
+                    <div class="asia-journey-content">
+                        <p class="text-body--lg p-4">
+                            <strong>The Alpine adventure begins!</strong> In September 2024, Mickaël, our head bartender, embarked on a month-long initiatory journey in Asia to explore the universe of exceptional mixology. <strong>3 weeks in Japan and 1 week in South Korea</strong> discovering the most prestigious establishments of the Asian cocktail scene.
+                        </p>
+
+                        <!-- 1 image seule pleine largeur -->
+                        <div class="mb-6">
+                            <div class="img-ratio img-ratio--16-9">
+                                <img src="../img/kian/kian1.jpg" alt="Mickaël as guest bartender at Kian" class="news-img">
+                            </div>
+                        </div>
+
+                        <p class="text-body--lg p-4">
+                            This journey was a quest for new flavors and innovative techniques: visiting the <strong>KI NO BI distillery in Kyoto</strong>, exploring the legendary <strong>Zest in Seoul</strong> (ranked among the world's best bars), meeting exceptional bartenders and tasting rare spirits like <strong>Hibiki Harmony</strong>. Each establishment visited enriched our vision of modern mixology.
+                        </p>
+
+                        <!-- 3 images -->
+                        <div class="grid grid--3 mb-6">
+                            <div class="img-ratio img-ratio--4-3">
+                                <img src="../img/kian/kian3.jpg" alt="Preparing signature cocktails with the Kian team" class="news-img">
+                            </div>
+                            <div class="img-ratio img-ratio--4-3">
+                                <img src="../img/kian/kian8.jpg" alt="Service during the guest event" class="news-img">
+                            </div>
+                            <div class="img-ratio img-ratio--4-3">
+                                <img src="../img/kian/kian4.jpg" alt="Collaboration with Kian bartenders" class="news-img">
+                            </div>
+                        </div>
+
+                        <p class="text-body--lg p-4">
+                            <strong>A creative laboratory</strong> where French tradition and Asian innovation met to create unique recipes that influence Alpine Bar's menu today. This international experience enriches our Alpine mixology approach and confirms our ambition to offer exceptional cocktails in Annecy.
+                        </p>
+
+                        <!-- 2 images -->
+                        <div class="grid grid--2 mb-6">
+                            <div class="img-ratio img-ratio--4-3">
+                                <img src="../img/kian/kian5.jpg" alt="Presentation of Alpine x Kian creations" class="news-img">
+                            </div>
+                            <div class="img-ratio img-ratio--4-3">
+                                <img src="../img/kian/kian10.jpg" alt="Exceptional guest evening in Seoul" class="news-img">
+                            </div>
+                        </div>
+
+                        <p class="text-body--lg p-4">
+                            This journey concluded with the materialization of all these discoveries through Mickaël's guest event at <strong>Kian</strong> as well as the ultimate experience: discovering <strong>Zest</strong>, the mythical establishment setting the standard for top 500 world bars excellence.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- News 2 - Opening -->
+                <article class="card card--primary">
+                    <div class="stack stack--sm mb-4">
+                        <h2 class="text-headline">🏔️ Confirmed Opening - October 2025</h2>
+                        <span class="text-caption">January 15, 2025</span>
                     </div>
                     <p class="text-body">
                         <strong>It's official!</strong> Alpine Bar will open its doors in October 2025 in the heart of Annecy. After months of preparation, we're thrilled to announce the final validation of our project.
@@ -114,10 +167,10 @@
                 </article>
 
                 <!-- News 2 - Partnership -->
-                <article class="bg-subtle card-lg card-border-left">
-                    <div class="header-flex">
-                        <h2 class="section-title--medium">🥃 Exclusive Christian Drouin Partnership</h2>
-                        <span class="date-small">January 10, 2025</span>
+                <article class="card card--primary">
+                    <div class="stack stack--sm mb-4">
+                        <h2 class="text-headline">🥃 Exclusive Christian Drouin Partnership</h2>
+                        <span class="text-caption">January 10, 2025</span>
                     </div>
                     <p class="text-body">
                         We're proud to announce our exclusive partnership with <strong>Maison Christian Drouin</strong>, Norman calvados reference since 1960.
@@ -129,47 +182,47 @@
 
 
                 <!-- News 4 - Local products -->
-                <article class="bg-subtle card-lg card-border-left">
-                    <div class="header-flex">
-                        <h2 class="section-title--medium">🌱 Confirmed Local Partners</h2>
-                        <span class="date-small">December 20, 2024</span>
+                <article class="card card--primary">
+                    <div class="stack stack--sm mb-4">
+                        <h2 class="text-headline">🌱 Confirmed Local Partners</h2>
+                        <span class="text-caption">December 20, 2024</span>
                     </div>
                     <p class="text-body">
                         Our commitment to <strong>local products</strong> takes shape with the signing of exclusive partnerships:
                     </p>
-                    <div class="grid-auto-sm partners-grid">
-                        <div class="bg-white-subtle card-sm">
-                            <h4 class="news-partner-title">🍯 Miellerie des Alpes</h4>
-                            <p class="news-partner-description">Artisanal organic honey</p>
+                    <div class="grid grid--3">
+                        <div class="card card--outline text-center">
+                            <h4 class="text-subtitle">🍯 Miellerie des Alpes</h4>
+                            <p class="text-body">Artisanal organic honey</p>
                         </div>
-                        <div class="bg-white-subtle card-sm">
-                            <h4 class="news-partner-title">🌿 Distillerie Hautes Glaces</h4>
-                            <p class="news-partner-description">Organic Alpine spirits</p>
+                        <div class="card card--outline text-center">
+                            <h4 class="text-subtitle">🌿 Distillerie Hautes Glaces</h4>
+                            <p class="text-body">Organic Alpine spirits</p>
                         </div>
-                        <div class="bg-white-subtle card-sm">
-                            <h4 class="news-partner-title">🧀 Fromagerie Chamonix</h4>
-                            <p class="news-partner-description">Mountain cheeses</p>
+                        <div class="card card--outline text-center">
+                            <h4 class="text-subtitle">🧀 Fromagerie Chamonix</h4>
+                            <p class="text-body">Mountain cheeses</p>
                         </div>
                     </div>
                 </article>
 
                 <!-- Follow Us Section -->
-                <section class="gradient-primary card-lg section-centered follow-section">
-                    <h2 class="section-title--large">📱 Follow Our Journey</h2>
-                    <p class="follow-description">Don't miss any Alpine Bar news! Follow us on Instagram to discover:</p>
+                <section class="card card--primary text-center">
+                    <h2 class="text-headline mb-4">📱 Follow Our Journey</h2>
+                    <p class="text-body--lg mb-6">Don't miss any Alpine Bar news! Follow us on Instagram to discover:</p>
                     
-                    <div class="grid-auto-sm follow-features">
-                        <div>✨ Exclusive announcements</div>
-                        <div>🎉 Private events</div>
-                        <div>📸 Behind-the-scenes preparation</div>
-                        <div>🍸 Cocktail previews</div>
+                    <div class="flex flex-wrap justify-center gap-6 mt-6 mb-8">
+                        <div class="text-body p-4">✨ Exclusive announcements</div>
+                        <div class="text-body p-4">🎉 Private events</div>
+                        <div class="text-body p-4">📸 Behind-the-scenes preparation</div>
+                        <div class="text-body p-4">🍸 Cocktail previews</div>
                     </div>
                     
                     <div>
                         <a href="https://www.instagram.com/alpine_bar/" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           class="btn-cta"
+                           class="link--btn"
                            aria-label="Follow Alpine Bar on Instagram @alpine_bar">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -186,7 +239,7 @@
     <div id="footer-placeholder"></div>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     <script src="../cookie-banner.js?v=2025091301"></script>
     <script src="../reviews-widget.js"></script>
 </body>

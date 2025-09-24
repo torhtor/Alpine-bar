@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Alpine Bar - Bar à cocktails de niveau professionnel visant le top 500 world bars
 - Localisation : Annecy, Haute-Savoie, Alpes françaises  
-- Ouverture prévue : début octobre
+- Ouverture prévue : octobre
 - Objectif : Excellence et ambition professionnelle
 - URL : www.alpine-bar.com
 - Contact : contact@alpine-bar.com
@@ -64,7 +64,8 @@ Alpine Bar - Bar à cocktails de niveau professionnel visant le top 500 world ba
 
 ### Architecture technique
 - Site statique HTML/CSS/JS pur (pas de frameworks lourds)
-- Header partagé via fetch
+- **Design System Alpine v2** : `alpine-design-system.css` (référence principale)
+- Header partagé via fetch avec sticky positioning
 - Responsive design avec breakpoints 768px et 480px
 - Fonte principale : Montserrat via Google Fonts
 
@@ -80,11 +81,46 @@ Alpine Bar - Bar à cocktails de niveau professionnel visant le top 500 world ba
 - Multi-language selector present but not functional yet
 - Footer copyright shows 2024/2025 (inconsistent across pages) --> variable à appliquer pour un footer dynamique.
 
-### Styling Notes
-- Color scheme: Dark header (#333), Alpine green (#2f4f4f), accent yellow (#f9d342)
-- Mobile breakpoints: 768px and 480px
-- Logo sizing: 100px width, auto height
-- Custom form styling with hover effects
+## Design System Alpine v2 ✅
+
+### Architecture CSS
+- **Fichier principal** : `alpine-design-system.css`
+- **Approche** : Mobile-first, modulaire, design tokens
+- **Déployé** : Développement + Production (`/production-ready/`)
+
+### Design Tokens
+```css
+/* Couleurs */
+--color-primary: #9C7A60;      /* Alpine Brown Light */
+--color-secondary: #41352B;    /* Alpine Brown Dark */
+--color-accent: #000000;       /* Alpine Black */
+
+/* Espacements */
+--space-1 à --space-30: 0.25rem à 7.5rem (4px à 120px)
+
+/* Typographie */
+--font-family: 'Montserrat', sans-serif;
+--text-xs à --text-5xl: 0.75rem à 3rem
+```
+
+### Composants Clés
+- **Layout Primitives** : `.container`, `.stack`, `.cluster`, `.grid`, `.center`
+- **Cards System** : `.card`, `.card--primary`, `.card--interactive`
+- **Typography** : `.text-display`, `.text-subtitle`, `.text-body`
+- **Header/Footer** : Sticky positioning, responsive, design system intégré
+
+### Règles d'Usage
+1. **NE JAMAIS** écrire du css inline ni utiliser des !important
+2. **TOUJOURS** utiliser `alpine-design-system.css` pour nouveaux développements
+3. **NE JAMAIS** modifier `styles.css` (legacy)
+4. **Utiliser** les design tokens pour espacement et couleurs
+5. **Suivre** l'approche mobile-first (768px, 480px breakpoints)
+6. **Respecter** la hiérarchie des composants (.card > .card--primary)
+
+### Legacy Notes (styles.css)
+- **Fichier obsolète** remplacé par le design system
+- **À éviter** pour nouveaux développements
+- **Migration** : Toutes les pages utilisent maintenant alpine-design-system.css
 
 ## Configuration SEO & Analytics (TERMINÉE)
 
@@ -128,9 +164,11 @@ Alpine Bar - Bar à cocktails de niveau professionnel visant le top 500 world ba
 
 ✅ **TERMINÉ - Site en production** :
 - 6 pages françaises + 6 pages anglaises
+- **Design System Alpine v2 déployé** sur toutes les pages
 - Analytics et Search Console configurés
 - Structure professionnelle déployée
 - Monitoring SEO actif
+- Header sticky avec espacement optimisé (120px)
 
 🔄 **Évolution naturelle attendue** :
 - Indexation Google : 3-7 jours

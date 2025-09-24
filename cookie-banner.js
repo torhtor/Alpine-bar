@@ -134,12 +134,12 @@ class CookieBanner {
                 left: 0;
                 right: 0;
                 background: rgba(65, 53, 43, 0.98);
-                color: var(--alpine-white);
-                padding: var(--spacing-lg);
+                color: var(--color-neutral-light);
+                padding: var(--space-6);
                 box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
                 z-index: 10000;
                 backdrop-filter: blur(10px);
-                border-top: 3px solid var(--alpine-brown-light);
+                border-top: 3px solid var(--color-primary);
             }
 
             .cookie-banner-content {
@@ -148,7 +148,7 @@ class CookieBanner {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                gap: var(--spacing-lg);
+                gap: var(--space-6);
             }
 
             .cookie-banner-text {
@@ -157,10 +157,10 @@ class CookieBanner {
             }
 
             .cookie-banner-text h4 {
-                margin: 0 0 var(--spacing-sm) 0;
+                margin: 0 0 var(--space-2) 0;
                 font-size: 1.2rem;
                 font-weight: 600;
-                color: var(--alpine-white);
+                color: var(--color-neutral-light);
             }
 
             .cookie-banner-text p {
@@ -172,12 +172,12 @@ class CookieBanner {
 
             .cookie-banner-actions {
                 display: flex;
-                gap: var(--spacing-md);
+                gap: var(--space-4);
                 flex-wrap: wrap;
             }
 
             .cookie-btn {
-                padding: var(--spacing-sm) var(--spacing-lg);
+                padding: var(--space-2) var(--space-6);
                 border: none;
                 border-radius: 8px;
                 font-weight: 600;
@@ -187,61 +187,61 @@ class CookieBanner {
             }
 
             .cookie-btn-primary {
-                background: var(--alpine-brown-light);
-                color: var(--alpine-white);
+                background: var(--color-primary);
+                color: var(--color-neutral-light);
             }
 
             .cookie-btn-primary:hover {
-                background: var(--alpine-white);
-                color: var(--alpine-brown-dark);
+                background: var(--color-neutral-light);
+                color: var(--color-secondary);
                 transform: translateY(-2px);
             }
 
             .cookie-btn-secondary {
                 background: transparent;
-                color: var(--alpine-white);
-                border: 2px solid var(--alpine-brown-light);
+                color: var(--color-neutral-light);
+                border: 2px solid var(--color-primary);
             }
 
             .cookie-btn-secondary:hover {
-                background: var(--alpine-brown-light);
+                background: var(--color-primary);
                 transform: translateY(-2px);
             }
 
             .cookie-btn-link {
                 background: transparent;
-                color: var(--alpine-brown-light);
+                color: var(--color-primary);
                 text-decoration: underline;
                 font-weight: 400;
             }
 
             .cookie-btn-link:hover {
-                color: var(--alpine-white);
+                color: var(--color-neutral-light);
             }
 
             .cookie-details {
                 max-width: 1200px;
-                margin: var(--spacing-lg) auto 0;
-                padding-top: var(--spacing-lg);
+                margin: var(--space-6) auto 0;
+                padding-top: var(--space-6);
                 border-top: 1px solid rgba(156, 122, 96, 0.3);
             }
 
             .cookie-details h4 {
-                margin: 0 0 var(--spacing-lg) 0;
+                margin: 0 0 var(--space-6) 0;
                 font-size: 1.1rem;
                 font-weight: 600;
             }
 
             .cookie-category {
-                margin-bottom: var(--spacing-lg);
+                margin-bottom: var(--space-6);
             }
 
             .cookie-checkbox {
                 display: flex;
                 align-items: flex-start;
-                gap: var(--spacing-md);
+                gap: var(--space-4);
                 cursor: pointer;
-                padding: var(--spacing-md);
+                padding: var(--space-4);
                 border-radius: 8px;
                 transition: background 0.3s ease;
             }
@@ -260,7 +260,7 @@ class CookieBanner {
                 width: 20px;
                 height: 20px;
                 background: transparent;
-                border: 2px solid var(--alpine-brown-light);
+                border: 2px solid var(--color-primary);
                 border-radius: 4px;
                 position: relative;
                 flex-shrink: 0;
@@ -268,7 +268,7 @@ class CookieBanner {
             }
 
             .cookie-checkbox input:checked ~ .checkmark {
-                background: var(--alpine-brown-light);
+                background: var(--color-primary);
             }
 
             .cookie-checkbox input:checked ~ .checkmark:after {
@@ -293,8 +293,8 @@ class CookieBanner {
 
             .cookie-checkbox strong {
                 display: block;
-                margin-bottom: var(--spacing-xs);
-                color: var(--alpine-white);
+                margin-bottom: var(--space-1);
+                color: var(--color-neutral-light);
             }
 
             .cookie-checkbox p {
@@ -306,13 +306,13 @@ class CookieBanner {
 
             @media (max-width: 768px) {
                 #cookie-banner {
-                    padding: var(--spacing-md);
+                    padding: var(--space-4);
                 }
 
                 .cookie-banner-content {
                     flex-direction: column;
                     align-items: stretch;
-                    gap: var(--spacing-md);
+                    gap: var(--space-4);
                 }
 
                 .cookie-banner-actions {
@@ -326,7 +326,7 @@ class CookieBanner {
 
                 .cookie-checkbox {
                     flex-direction: column;
-                    gap: var(--spacing-sm);
+                    gap: var(--space-2);
                 }
 
                 .checkmark {
