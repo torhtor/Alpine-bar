@@ -57,7 +57,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-49Z27M7V6G"></script>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="alpine-design-system.css">
     
     
     <!-- Structured Data for Menu -->
@@ -93,457 +93,492 @@
     }
     </script>
 </head>
-<body>
+<body class="menu-page">
     <!-- Skip Navigation pour accessibilité -->
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <!-- Header -->
     <div id="header-placeholder"></div>
 
     <main id="main-content">
-        <div class="menu-card">
-            <h1>Notre Carte</h1>
-            
+        <div class="card card--primary">
+
+            <!-- Hero Section -->
+            <section class="stack text-center mb-8">
+                <h1 class="text-display"><span aria-hidden="true">🍸</span> Notre Carte</h1>
+                <p class="text-body--lg">Cocktails d'exception façonnés par le terroir alpin et la passion</p>
+            </section>
+
             <!-- Alpine x Christian Drouin -->
-            <section class="menu-section">
+            <section class="card card--secondary">
                 <h2>Alpine × Christian Drouin</h2>
-                <div class="collaboration-note">
+                <div class="card card--outline">
                     Fondée en 1960, la Maison Christian Drouin est située au cœur du Pays d'Auge. Elle perpétue un savoir-faire familial alliant tradition et innovation, avec une sélection rigoureuse des pommes et une distillation artisanale en petits alambics. Des calvados aux gins, chaque création exprime la richesse du terroir normand, offrant des eaux-de-vie élégantes, complexes et authentiques.
                 </div>
                 
                 <h3>Cocktails de Saison</h3>
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Highball Contest</h4>
                         <p>Eau-de-vie de pomme Christian Drouin La Blanche, camomille, miel, vinaigre de cidre, eau pétillante</p>
                     </div>
-                    <span class="item-price">12€</span>
+                    <span class="product-price">12€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Jamaican Cafe Calva</h4>
                         <p>Calvados Christian Drouin Sélection, liqueur de falernum, amaretto Adriatico, sucre demerara, café</p>
                     </div>
-                    <span class="item-price">13€</span>
+                    <span class="product-price">13€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Bourdaloue</h4>
                         <p>Gin Christian Drouin Pira, beurre, orgeat, teinture de poire, crème entière liquide, citron, émulsifiant</p>
                     </div>
-                    <span class="item-price">13€</span>
+                    <span class="product-price">13€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Fall Fashioned</h4>
                         <p>Calvados Christian Drouin Réserve Pays d'Auge, crème de marrons, vanille, bitters</p>
                     </div>
-                    <span class="item-price">14€</span>
+                    <span class="product-price">14€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Plateau de Dégustation de Calvados</h4>
                         <p>2cl de Calvados Christian Drouin Réserve Pays d'Auge, 2cl de Calvados Christian Drouin VSOP, 2cl de Calvados Christian Drouin XO</p>
                     </div>
-                    <span class="item-price">16€</span>
+                    <span class="product-price">16€</span>
+                </div>
                 </div>
             </section>
 
             <!-- Cocktails Signatures -->
-            <section class="menu-section">
-                <h2>Cocktails Signatures</h2>
-                
-                <div class="menu-item">
-                    <div class="item-info">
+            <section class="card card--secondary">
+                <h2 class="text-headline">🍸 Cocktails Signatures</h2>
+
+                <h3 class="text-title">Créations Alpine</h3>
+
+                <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Alpine Spritz</h4>
                         <p>Génépi Maison M, vermouth Mulassano Extra Dry, citron, crémant de Savoie, eau pétillante</p>
                     </div>
-                    <span class="item-price">12€</span>
+                    <span class="product-price">12€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Red Clover</h4>
                         <p>Dry gin Altitude, vermouth Mulassano Bianco, framboise, citron, mousse de shiso vert</p>
                     </div>
-                    <span class="item-price">13€</span>
+                    <span class="product-price">13€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Crossbill</h4>
                         <p>Eau de vie de seigle Domaine des Hautes Glaces Vulson, gentiane Maison M, cerise, citron vert, soda au pomelo</p>
                     </div>
-                    <span class="item-price">13€</span>
+                    <span class="product-price">13€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Reblochon Tart</h4>
                         <p>Vodka à la poire Distillerie du St Esprit, reblochon, miel, romarin, citron, clarifié au lait entier, mousse de reblochon</p>
                     </div>
-                    <span class="item-price">14€</span>
+                    <span class="product-price">14€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Mont Blanc</h4>
                         <p>Distillat de pistache Strato, citron, citron vert, chocolat blanc, crème entière liquide, émulsifiant, eau pétillante</p>
                     </div>
-                    <span class="item-price">14€</span>
+                    <span class="product-price">14€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Golden Eagle</h4>
                         <p>Whisky Indigène Domaine des Hautes Glaces Indigène, cognac VS, amaretto Adriatico, vermouth Mulassano Rosso, élixir Maison M, bitters</p>
                     </div>
-                    <span class="item-price">15€</span>
+                    <span class="product-price">15€</span>
+                </div>
                 </div>
             </section>
 
             <!-- Softs & Mocktails -->
-            <section class="menu-section">
-                <h2>Softs & Mocktails</h2>
-                
-                <h3>Mocktails</h3>
-                <div class="menu-item">
-                    <div class="item-info">
+            <section class="card card--secondary">
+                <h2 class="text-headline">🥤 Softs & Mocktails</h2>
+
+                <h3 class="text-title">Mocktails</h3>
+                <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Green Detox</h4>
                         <p>Menthe fraîche, pomme, concombre, miel, citron vert, vinaigre</p>
                     </div>
-                    <span class="item-price">7€</span>
+                    <span class="product-price">7€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Tropical Storm</h4>
                         <p>Ananas, fruit de la passion, orgeat, soda au gingembre, bitters</p>
                     </div>
-                    <span class="item-price">7€</span>
+                    <span class="product-price">7€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Bleeding Heart</h4>
                         <p>Tomate, fleur de sureau, verveine, citron, vinaigre, clarifié au lait entier</p>
                     </div>
-                    <span class="item-price">7€</span>
+                    <span class="product-price">7€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Liquid Pastry</h4>
                         <p>Basilic, framboise, amande, chocolat blanc, crème entière liquide, émulsifiant</p>
                     </div>
-                    <span class="item-price">7€</span>
+                    <span class="product-price">7€</span>
                 </div>
                 
-                <h3>Autres Softs</h3>
-                <div class="menu-item">
-                    <div class="item-info">
+                </div>
+
+                <h3 class="text-title">Autres Softs</h3>
+                <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Sodas Maison</h4>
                         <p>Cola, Tonic, Gingembre, Pomelo</p>
                     </div>
-                    <span class="item-price">3€</span>
+                    <span class="product-price">3€</span>
                 </div>
                 
-                <div class="menu-item">
-                    <div class="item-info">
+                <div class="product-item">
+                    <div class="product-info">
                         <h4>Jus de Pomme Bio Alain Milliat</h4>
                         <p>18cl</p>
                     </div>
-                    <span class="item-price">3€50</span>
+                    <span class="product-price">3€50</span>
+                </div>
                 </div>
             </section>
 
             <!-- Bières & Vins -->
-            <section class="menu-section">
-                <h2>Bières & Vins</h2>
-                
-                <div class="two-column">
-                    <div>
-                        <h3>Bières</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+            <section class="card card--secondary">
+                <h2 class="text-headline">🍺 Bières & Vins</h2>
+
+                <h3 class="text-title">Bières</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Galibier Snowball Pression</h4>
                                 <p>5,2° - 25cl / 50cl</p>
                             </div>
-                            <span class="item-price">5€ / 9€</span>
+                            <span class="product-price">5€ / 9€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Ibex Alpina Blanche</h4>
                                 <p>4,5° - 33cl bouteille</p>
                             </div>
-                            <span class="item-price">9€</span>
+                            <span class="product-price">9€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Ibex Cabin Fever IPA</h4>
                                 <p>5° - 33cl bouteille</p>
                             </div>
-                            <span class="item-price">9€</span>
+                            <span class="product-price">9€</span>
                         </div>
                         
-                        <h3>Vins Blancs</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Vins Blancs</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Chignin Domaine JC Girard Madoux</h4>
                                 <p>12cl / 75cl</p>
                             </div>
-                            <span class="item-price">7€ / 35€</span>
+                            <span class="product-price">7€ / 35€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Chardonnay Domaine Duport</h4>
                                 <p>75cl</p>
                             </div>
-                            <span class="item-price">42€</span>
+                            <span class="product-price">42€</span>
                         </div>
                         
-                        <h3>Vins Rouges</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Vins Rouges</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Pinot Noir Cave de Chautagne</h4>
                                 <p>12cl / 75cl</p>
                             </div>
-                            <span class="item-price">7€ / 35€</span>
+                            <span class="product-price">7€ / 35€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Mondeuse Domaine JC Girard Madoux</h4>
                                 <p>75cl</p>
                             </div>
-                            <span class="item-price">42€</span>
+                            <span class="product-price">42€</span>
                         </div>
-                    </div>
-                    
-                    <div>
-                        <h3>Vin Rosé</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Vin Rosé</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Gamay Cave de Chautagne</h4>
                                 <p>75cl</p>
                             </div>
-                            <span class="item-price">35€</span>
+                            <span class="product-price">35€</span>
                         </div>
                         
-                        <h3>Vins Pétillants</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Vins Pétillants</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Crémant de Savoie Domaine Perceval</h4>
                                 <p>12cl / 75cl</p>
                             </div>
-                            <span class="item-price">8€ / 42€</span>
+                            <span class="product-price">8€ / 42€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Champagne Royal Brut Philipponnat</h4>
                                 <p>75cl</p>
                             </div>
-                            <span class="item-price">120€</span>
+                            <span class="product-price">120€</span>
                         </div>
-                    </div>
-                </div>
+                        </div>
             </section>
 
             <!-- Apéritifs -->
-            <section class="menu-section">
-                <h2>Apéritifs</h2>
-                
-                <div class="two-column">
-                    <div>
-                        <h3>Vermouths</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+            <section class="card card--secondary">
+                <h2 class="text-headline">🍷 Apéritifs</h2>
+
+                <h3 class="text-title">Vermouths</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Mulassano Extra Dry</h4>
                                 <p>18° - 6cl</p>
                             </div>
-                            <span class="item-price">6€</span>
+                            <span class="product-price">6€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Mulassano Bianco</h4>
                                 <p>18° - 6cl</p>
                             </div>
-                            <span class="item-price">6€</span>
+                            <span class="product-price">6€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Mulassano Rosso</h4>
                                 <p>18° - 6cl</p>
                             </div>
-                            <span class="item-price">6€</span>
+                            <span class="product-price">6€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Cocchi Storico</h4>
                                 <p>16° - 6cl</p>
                             </div>
-                            <span class="item-price">6€</span>
+                            <span class="product-price">6€</span>
                         </div>
-                    </div>
-                    
-                    <div>
-                        <h3>Liqueurs</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Liqueurs</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Fleur de Sureau Boudier</h4>
                                 <p>18° - 6cl</p>
                             </div>
-                            <span class="item-price">6€</span>
+                            <span class="product-price">6€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Génépi Meunier Altitude</h4>
                                 <p>42° - 4cl</p>
                             </div>
-                            <span class="item-price">7€</span>
+                            <span class="product-price">7€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Amaretto Disaronno</h4>
                                 <p>28° - 6cl</p>
                             </div>
-                            <span class="item-price">7€</span>
+                            <span class="product-price">7€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Chartreuse Jaune</h4>
                                 <p>43° - 4cl</p>
                             </div>
-                            <span class="item-price">10€</span>
+                            <span class="product-price">10€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Chartreuse Verte</h4>
                                 <p>55° - 4cl</p>
                             </div>
-                            <span class="item-price">12€</span>
+                            <span class="product-price">12€</span>
                         </div>
-                    </div>
-                </div>
+                        </div>
             </section>
 
             <!-- Spiritueux -->
-            <section class="menu-section">
-                <h2>Spiritueux</h2>
-                
-                <div class="two-column">
-                    <div>
-                        <h3>Gins (supplément tonic 1€)</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+            <section class="card card--secondary">
+                <h2 class="text-headline">🥃 Spiritueux</h2>
+
+                <h3 class="text-title">Gins (supplément tonic 1€)</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Citadelle Original</h4>
                                 <p>44° - 6cl</p>
                             </div>
-                            <span class="item-price">9€</span>
+                            <span class="product-price">9€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>C. Drouin Le Gin</h4>
                                 <p>42° - 6cl</p>
                             </div>
-                            <span class="item-price">12€</span>
+                            <span class="product-price">12€</span>
                         </div>
                         
-                        <h3>Whiskys</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Whiskys</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Maker's Mark</h4>
                                 <p>45° - 5cl</p>
                             </div>
-                            <span class="item-price">9€</span>
+                            <span class="product-price">9€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Laphroaig 10</h4>
                                 <p>46° - 5cl</p>
                             </div>
-                            <span class="item-price">13€</span>
+                            <span class="product-price">13€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Hibiki Harmony</h4>
                                 <p>43° - 5cl</p>
                             </div>
-                            <span class="item-price">24€</span>
+                            <span class="product-price">24€</span>
                         </div>
-                    </div>
-                    
-                    <div>
-                        <h3>Rhums</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Rhums</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Veritas</h4>
                                 <p>47° - 5cl</p>
                             </div>
-                            <span class="item-price">9€</span>
+                            <span class="product-price">9€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Planteray PXXO</h4>
                                 <p>40° - 5cl</p>
                             </div>
-                            <span class="item-price">16€</span>
+                            <span class="product-price">16€</span>
                         </div>
                         
-                        <h3>Tequilas</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Tequilas</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>El Tequileño Blanco</h4>
                                 <p>38° - 5cl</p>
                             </div>
-                            <span class="item-price">9€</span>
+                            <span class="product-price">9€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Ocho Añejo</h4>
                                 <p>40° - 5cl</p>
                             </div>
-                            <span class="item-price">17€</span>
+                            <span class="product-price">17€</span>
                         </div>
                         
-                        <h3>Cognac & Calvados</h3>
-                        <div class="menu-item">
-                            <div class="item-info">
+                        </div>
+
+                <h3 class="text-title">Cognac & Calvados</h3>
+                        <div class="product-grid">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Cognac Ferrand Ambré</h4>
                                 <p>40° - 5cl</p>
                             </div>
-                            <span class="item-price">14€</span>
+                            <span class="product-price">14€</span>
                         </div>
                         
-                        <div class="menu-item">
-                            <div class="item-info">
+                        <div class="product-item">
+                            <div class="product-info">
                                 <h4>Christian Drouin VSOP</h4>
                                 <p>40° - 5cl</p>
                             </div>
-                            <span class="item-price">14€</span>
+                            <span class="product-price">14€</span>
                         </div>
-                    </div>
-                </div>
+                        </div>
             </section>
+
+            <!-- Information -->
+            <section class="card card--secondary">
+                <h3 class="text-title">🌱 Notre Engagement</h3>
+                <p class="text-body--lg">Tous nos ingrédients sont sourcés dans un rayon de 50km autour d'Annecy. Nous travaillons exclusivement avec des producteurs locaux et privilégions les produits bio et durables pour vous offrir une expérience alpine authentique tout en respectant notre environnement.</p>
+            </section>
+
         </div>
     </main>
 

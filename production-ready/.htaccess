@@ -1,13 +1,29 @@
 # Security Headers for Alpine Bar Website
 # Configuration Apache pour améliorer la sécurité
 
-# Forcer HTTPS
+# Forcer HTTPS et redirections canoniques
 RewriteEngine On
+
+# Redirection HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Content Security Policy (CSP)
+# Redirections index.html vers / (canonique)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirection en/index.html vers /en/ (canonique)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+en/index\.html[\s?] [NC]
+RewriteRule ^en/index\.html$ /en/ [R=301,L]
+
+# Content Security Policy (CSP) - Compatible avec Google bots
 Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+
+# Autoriser les bots Google explicitement
+<RequireAll>
+    Require all granted
+    # Pas de restriction d'accès pour les bots
+</RequireAll>
 
 # X-Frame-Options - Protection contre le clickjacking
 Header always set X-Frame-Options "DENY"

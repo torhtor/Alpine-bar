@@ -53,7 +53,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-49Z27M7V6G"></script>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="alpine-design-system.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -100,122 +100,117 @@
     <!-- Header -->
     <div id="header-placeholder"></div>
 
-    <main id="main-content">
-        <div class="page-card">
-            
-            <!-- Hero Section -->
-            <section class="section-centered">
-                <h1 class="hero-title hero-title--large">Nous Trouver</h1>
-                <p class="hero-subtitle hero-subtitle--medium">Au cœur du centre historique d'Annecy</p>
-            </section>
+    <main class="container" id="main-content">
+        <div class="card card--primary text-center mb-8 p-6">
+            <h1 class="text-display">Nous Trouver</h1>
+            <p class="text-body--lg mb-8">Au cœur du centre historique d'Annecy</p>
 
-            <!-- Adresse -->
-            <article class="bg-subtle card-lg">
-                <h2 class="section-title--medium">📍 Notre Adresse</h2>
-                <div class="text-center">
-                    <p class="text-body"><strong>Galerie des Sorbiers, 13 Rue Royale</strong></p>
-                    <p class="text-body">74000 Annecy, France</p>
+            <!-- Adresse intégrée -->
+            <div class="mb-8">
+                <h2 class="text-headline mb-4 text-center p-6">📍 Notre Adresse</h2>
+                <div class="card card--outline text-center p-6">
+                    <p class="text-body--lg"><strong>Galerie des Sorbiers, 13 Rue Royale</strong></p>
+                    <p class="text-body--lg">74000 Annecy, France</p>
                     <p class="text-body"><em>Situé dans une rue historique du centre d'Annecy, à deux pas du lac et des canaux pittoresques</em></p>
                 </div>
-            </article>
+            </div>
 
-            <!-- Transports -->
-            <article class="bg-subtle card-lg">
-                <h2 class="section-title--medium">🚌 Transports en Commun</h2>
-                <div class="grid-auto-sm">
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🚂 Gare SNCF</h3>
-                        <p>10 minutes à pied</p>
+            <!-- Horaires intégrés -->
+            <div class="mb-8">
+                <h2 class="text-headline mb-4 text-center p-6">⏰ Horaires</h2>
+                <div class="grid grid--2 mb-4">
+                    <div class="card card--outline text-center p-6">
+                        <h3 class="text-subtitle">Du lundi au samedi</h3>
+                        <p class="text-body"><strong>17h00 - 01h00</strong></p>
                     </div>
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🚌 Bus lignes 1, 2, 6</h3>
-                        <p>Arrêt "Courier" - 2 min à pied</p>
-                    </div>
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🚐 Navette gratuite</h3>
-                        <p>Centre-ville - Arrêt "Mairie"</p>
+                    <div class="card card--outline text-center p-6">
+                        <h3 class="text-subtitle">Dimanche</h3>
+                        <p class="text-body"><strong>14h00 - 22h00</strong></p>
                     </div>
                 </div>
-            </article>
+            </div>
+        </div>
 
-            <!-- Parking -->
-            <article class="bg-subtle card-lg">
-                <h2 class="section-title--medium">🚗 Parking & Accès</h2>
-                <div class="grid-auto-sm">
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🅿️ Parking Courier</h3>
-                        <p>50m - Couvert - 24h/24</p>
+        <!-- Transports -->
+        <article class="card card--primary mb-8">
+            <h2 class="text-headline text-center mb-6 p-6">🚌 Transports en Commun</h2>
+            <div class="grid grid--3">
+                <div class="card card--outline text-center p-4">
+                    <h3 class="text-subtitle">🚂 Gare SNCF</h3>
+                    <p class="text-body">10 minutes à pied</p>
+                </div>
+                <div class="card card--outline text-center p-4">
+                    <h3 class="text-subtitle">🚌 Bus lignes 1, 2, 6</h3>
+                    <p class="text-body">Arrêt "Courier" - 2 min à pied</p>
+                </div>
+                <div class="card card--outline text-center p-4">
+                    <h3 class="text-subtitle">🚐 Navette gratuite</h3>
+                    <p class="text-body">Centre-ville - Arrêt "Mairie"</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Parking -->
+        <article class="card card--primary mb-8">
+            <h2 class="text-headline text-center mb-6 p-6">🚗 Parking & Accès</h2>
+            <div class="grid grid--3">
+                <div class="card card--outline text-center p-4">
+                    <h3 class="text-subtitle">🅿️ Parking Courier</h3>
+                    <p class="text-body">50m - Couvert - 24h/24</p>
+                </div>
+                <div class="card card--outline text-center p-4">
+                    <h3 class="text-subtitle">🅿️ Parking Notre-Dame</h3>
+                    <p class="text-body">100m - Souterrain</p>
+                </div>
+                <div class="card card--outline text-center p-4">
+                    <h3 class="text-subtitle">🚶 Zone piétonne</h3>
+                    <p class="text-body">Centre historique - Accès limité</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Points d'intérêt -->
+        <article class="card card--primary mb-8">
+            <h2 class="text-headline text-center mb-6 p-6">🏔️ Points d'Intérêt à Proximité</h2>
+            <div class="stack stack--md">
+                <div class="grid grid--2">
+                    <div class="card card--outline text-center p-6">
+                        <h3 class="text-subtitle">🏰 Château d'Annecy</h3>
+                        <p class="text-body">300m - 4 min à pied</p>
                     </div>
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🅿️ Parking Notre-Dame</h3>
-                        <p>100m - Souterrain</p>
-                    </div>
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🚶 Zone piétonne</h3>
-                        <p>Centre historique - Accès limité</p>
+                    <div class="card card--outline text-center p-6">
+                        <h3 class="text-subtitle">🌊 Lac d'Annecy</h3>
+                        <p class="text-body">200m - 3 min à pied</p>
                     </div>
                 </div>
-            </article>
-
-            <!-- Points d'intérêt -->
-            <article class="bg-subtle card-lg">
-                <h2 class="section-title--medium">🏔️ Points d'Intérêt à Proximité</h2>
-                <div class="grid-auto-sm">
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🏰 Château d'Annecy</h3>
-                        <p>300m - 4 min à pied</p>
+                <div class="grid grid--2">
+                    <div class="card card--outline text-center p-6">
+                        <h3 class="text-subtitle">🌉 Palais de l'Isle</h3>
+                        <p class="text-body">150m - 2 min à pied</p>
                     </div>
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🌊 Lac d'Annecy</h3>
-                        <p>200m - 3 min à pied</p>
-                    </div>
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🌉 Palais de l'Isle</h3>
-                        <p>150m - 2 min à pied</p>
-                    </div>
-                    <div class="bg-white-subtle card-sm">
-                        <h3>🛍️ Vieille Ville</h3>
-                        <p>Au cœur du quartier</p>
+                    <div class="card card--outline text-center p-6">
+                        <h3 class="text-subtitle">🛍️ Vieille Ville</h3>
+                        <p class="text-body">Au cœur du quartier</p>
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <!-- Horaires -->
-            <article class="bg-subtle card-lg">
-                <h2 class="section-title--medium">⏰ Horaires Prévus</h2>
-                <div class="text-center">
-                    <div class="grid-auto-sm">
-                        <div class="bg-white-subtle card-sm">
-                            <h3>Du lundi au samedi</h3>
-                            <p><strong>17h00 - 01h00</strong></p>
-                        </div>
-                        <div class="bg-white-subtle card-sm">
-                            <h3>Dimanche</h3>
-                            <p><strong>14h00 - 22h00</strong></p>
-                        </div>
-                    </div>
-                    <p class="text-small">*Horaires définitifs communiqués à l'ouverture</p>
-                </div>
-            </article>
-
-            <!-- Contact -->
-            <article class="gradient-primary card-lg section-centered">
-                <h2 class="section-title--large">📧 Contact</h2>
-                <div class="grid-auto-sm">
-                    <div class="bg-white-subtle card-sm">
-                        <h3>📧 Email Principal</h3>
-                        <p>contact@alpine-bar.com</p>
-                        <p class="text-small">Réponse sous 24h</p>
-                    </div>
-                </div>
+        <!-- Contact -->
+        <article class="card card--primary text-center">
+            <h2 class="text-headline mb-6 p-6">📧 Contact</h2>
+            <div class="card card--outline text-center mb-6 p-4">
+                <p class="text-body">contact@alpine-bar.com</p>
+                <p class="text-caption">Réponse sous 24h</p>
+            </div>
                 
-                <p class="text-body">Suivez-nous sur Instagram pour être informé en priorité de l'ouverture des réservations !</p>
+            <p class="text-body mb-6 p-4">Suivez-nous sur Instagram pour être informé en priorité de l'ouverture des réservations !</p>
                 
                 <div>
                     <a href="https://www.instagram.com/alpine_bar/" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       class="btn-cta"
+                       class="link--btn"
                        aria-label="Suivez Alpine Bar sur Instagram @alpine_bar">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.40z"/>

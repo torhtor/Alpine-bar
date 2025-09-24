@@ -1,38 +1,38 @@
-<header role="banner">
-    <div class="header-top">
-        <div class="language-selector">
-            <a href="#" class="active" aria-label="Langue française sélectionnée" lang="fr">FR</a>
-            <span aria-hidden="true">|</span>
-            <a href="en/index.html" aria-label="Changer vers l'anglais" lang="en">EN</a>
+<header class="header" role="banner">
+    <div class="header__top">
+        <div class="lang-switcher">
+            <button class="lang-switcher__btn lang-switcher__btn--active" aria-label="Langue française sélectionnée" lang="fr">FR</button>
+            <button class="lang-switcher__btn" aria-label="Changer vers l'anglais" lang="en">EN</button>
         </div>
-        
-        <div class="social-links">
-            <a href="https://www.instagram.com/alpine_bar/" 
-               target="_blank" 
-               rel="noopener noreferrer" 
+
+        <div class="header__social">
+            <a href="https://www.instagram.com/alpine_bar/"
+               target="_blank"
+               rel="noopener noreferrer"
                aria-label="Suivez Alpine Bar sur Instagram @alpine_bar"
-               class="instagram-link">
+               class="footer__social-link">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
             </a>
         </div>
+
+        <!-- Menu mobile toggle -->
+        <button class="nav__toggle" aria-label="Menu mobile">☰</button>
     </div>
-    
-    <div class="main-image">
-        <a href="index.html" aria-label="Retour à l'accueil Alpine Bar">
-            <img src="logo/Alpine-logo-black.svg?v=2025011502" alt="Alpine Bar Annecy - Logo du bar à cocktails" class="logo header-logo-inverted">
+
+    <div class="header__main">
+        <a href="index.html" class="link--no-underline" aria-label="Retour à l'accueil Alpine Bar">
+            <img src="logo/Alpine-logo-black.svg?v=2025011502" alt="Alpine Bar Annecy - Logo du bar à cocktails" class="logo inverted">
         </a>
-        <h1>Alpine Bar</h1>
-        <p class="tagline">Bar à cocktails • Annecy</p>
-        
-        <nav role="navigation" aria-label="Navigation principale du site">
-            <ul role="menubar">
-                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Accueil</a></li>
-                <li role="none"><a href="menu.html" class="nav-link" role="menuitem">Notre Carte</a></li>
-                <li role="none"><a href="actualites.html" class="nav-link" role="menuitem">Actualités</a></li>
-                <li role="none"><a href="findus.html" class="nav-link" role="menuitem">Nous Trouver</a></li>
-                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+
+        <nav class="nav" role="navigation" aria-label="Navigation principale du site">
+            <ul class="nav__list" role="menubar">
+                <li class="nav__item" role="none"><a href="index.html" class="nav__link" role="menuitem">Accueil</a></li>
+                <li class="nav__item" role="none"><a href="menu.html" class="nav__link" role="menuitem">Notre Carte</a></li>
+                <li class="nav__item" role="none"><a href="actualites.html" class="nav__link" role="menuitem">Actualités</a></li>
+                <li class="nav__item" role="none"><a href="findus.html" class="nav__link" role="menuitem">Nous Trouver</a></li>
+                <li class="nav__item" role="none"><a href="contact.html" class="nav__link" role="menuitem">Contact</a></li>
             </ul>
         </nav>
     </div>

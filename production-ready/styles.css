@@ -508,9 +508,9 @@ footer a:hover,
     background-color: var(--alpine-brown-light);
     width: 100%;
     max-width: 900px;
-    margin: var(--spacing-md) auto;
+    margin: 2rem auto;
     border-radius: 20px;
-    padding: var(--spacing-lg);
+    padding: 3rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     color: var(--alpine-black);
     box-sizing: border-box;
@@ -525,13 +525,6 @@ body.contact-page {
     background-color: var(--alpine-brown-dark);
 }
 
-body.contact-page .page-card {
-    width: 100%;
-    max-width: 900px;
-    margin: var(--spacing-md) auto;
-    padding: var(--spacing-lg);
-    box-sizing: border-box;
-}
 
 body.home-page .hero {
     background: var(--alpine-brown-light);
@@ -548,7 +541,7 @@ body.home-page .section {
     background: var(--alpine-brown-light);
     margin: 2rem auto;
     width: 100%;
-    max-width: 900px;
+    max-width: 900px; /* Limite pour mobile/tablet */
     border-radius: 20px;
     padding: var(--spacing-lg);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -837,14 +830,39 @@ main {
 }
 
 /* Menu Styles */
-/* MOBILE-FIRST LAYOUT */
+/* MOBILE-FIRST LAYOUT - Optimisé pour lisibilité mobile */
 .cocktail-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     margin: var(--spacing-lg) auto 0;
     width: 100%;
     box-sizing: border-box;
+    max-width: 500px; /* Limite la largeur sur mobile pour éviter l'étirement */
+}
+
+/* Sur mobile, on affiche seulement 2-3 items max par catégorie */
+@media (max-width: 480px) {
+    .cocktail-category {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .cocktail-item:nth-child(n+4) {
+        display: none; /* Cache les items au-delà du 3ème sur mobile */
+    }
+
+    .cocktail-category::after {
+        content: "Voir la carte complète →";
+        display: block;
+        text-align: center;
+        color: var(--alpine-brown-light);
+        font-weight: 500;
+        margin-top: var(--spacing-md);
+        padding: var(--spacing-sm);
+        background: var(--alpine-cream);
+        border-radius: 8px;
+        cursor: pointer;
+    }
 }
 
 .cocktail-category {
@@ -853,6 +871,39 @@ main {
     padding: var(--spacing-lg);
     box-shadow: 0 4px 20px rgba(65, 53, 43, 0.1);
     transition: transform 0.3s ease;
+}
+
+/* Desktop : cartes BEAUCOUP plus aérées */
+@media (min-width: 768px) {
+    .cocktail-category {
+        padding: 2.5rem;
+        min-height: 500px; /* Hauteur minimum pour consistance */
+        font-size: 1.1rem;
+    }
+
+    .cocktail-category h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cocktail-item {
+        padding: 1.2rem 0;
+        border-bottom: 1px solid var(--alpine-cream);
+    }
+
+    .cocktail-item h4 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cocktail-item p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .cocktail-item:last-child {
+        border-bottom: none;
+    }
 }
 
 .cocktail-category:hover {
@@ -1153,6 +1204,45 @@ nav ul {
         margin: var(--spacing-xs) auto;
         box-sizing: border-box;
     }
+
+    /* Simplification mobile : supprime les cartes intermédiaires pour la lisibilité */
+    .news-timeline article.bg-subtle,
+    .contact-page article.bg-subtle,
+    .menu-page .cocktail-category {
+        background: transparent;
+        border-radius: 0;
+        padding: var(--spacing-md) 0;
+        box-shadow: none;
+        border-bottom: 2px solid rgba(65, 53, 43, 0.2);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    /* Conserve le contraste pour les sous-éléments importants */
+    .bg-white-subtle.card-sm {
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(65, 53, 43, 0.2);
+        padding: var(--spacing-sm);
+        border-radius: 8px;
+    }
+
+    /* Améliore la lisibilité du texte en mobile */
+    .text-body {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .section-title--medium {
+        font-size: 1.3rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    /* Adapte les home-feature-item pour mobile */
+    .home-feature-item {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+        border-radius: 8px;
+    }
 }
 
 .cocktail-category {
@@ -1164,8 +1254,8 @@ button {
     min-height: 44px; /* Touch target */
 }
 
-/* TABLET ENHANCEMENT (481px and up) */
-@media (min-width: 481px) {
+/* TABLET ENHANCEMENT (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
     main {
         padding: var(--spacing-lg) var(--spacing-md);
         width: 100%;
@@ -1173,23 +1263,32 @@ button {
         overflow-x: hidden;
         box-sizing: border-box;
     }
-    
+
     .page-card {
         width: 100%;
         padding: var(--spacing-lg);
         margin: var(--spacing-md) auto;
         box-sizing: border-box;
     }
-    
+
+    /* Simplification tablette : atténue l'effet des cartes imbriquées */
+    .news-timeline article.bg-subtle,
+    .contact-page article.bg-subtle,
+    .menu-page .cocktail-category {
+        background: rgba(65, 53, 43, 0.05);
+        border-radius: 12px;
+        border-left: 3px solid var(--alpine-brown-dark);
+    }
+
     .hero h2 {
         font-size: 2.5rem;
         letter-spacing: 2px;
     }
-    
+
     .hero .subtitle {
         font-size: 1.4rem;
     }
-    
+
     .hero p {
         font-size: 1.1rem;
         max-width: 500px;
@@ -1223,23 +1322,26 @@ button {
     }
     
     main {
-        padding: var(--spacing-xl) var(--spacing-md);
-        width: 100%;
-        max-width: 100vw;
+        padding: var(--spacing-xl) var(--spacing-lg);
+        width: 92%; /* Utilise 92% de l'écran sur desktop - vraiment large */
+        max-width: 1900px; /* Limite max pour très grands écrans */
+        margin: 0 auto; /* Centre le contenu */
         overflow-x: hidden;
         box-sizing: border-box;
     }
-    
-    .page-card {
-        width: 75%;
+
+    body .page-card {
+        width: 100%; /* Utilise toute la largeur du main */
+        max-width: none; /* Supprime la limite max-width pour desktop */
         padding: var(--spacing-xl);
         margin: var(--spacing-lg) auto;
         box-sizing: border-box;
     }
     
-    body.home-page .hero,
+    body .hero,
     body.home-page .section {
-        width: 75%;
+        width: 100%; /* Utilise toute la largeur du main élargi */
+        max-width: none; /* Supprime la limite max-width pour desktop */
         padding: var(--spacing-xxl);
     }
     
@@ -1248,7 +1350,7 @@ button {
     }
     
     .privacy-page .page-card {
-        width: 75%;
+        width: 100%; /* Utilise toute la largeur du main élargi */
     }
     
     
@@ -1290,17 +1392,97 @@ button {
         gap: var(--spacing-lg);
     }
     
-    /* Grid enhancements */
+    /* Grid enhancements - Desktop VRAIMENT spacieux avec main élargi */
     .cocktail-grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: var(--spacing-lg);
-        margin: var(--spacing-xl) auto 0;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        gap: 3rem;
+        margin: 3rem auto 0;
+        max-width: none; /* Pas de limite, utilise tout le main */
+        padding: 0;
     }
-    
+
+    /* Annule les restrictions mobile sur desktop */
+    .cocktail-item:nth-child(n+4) {
+        display: flex !important;
+    }
+
+    .cocktail-category::after {
+        display: none !important;
+    }
+
+    /* News section styles desktop - plus spacieux */
+    .latest-news {
+        padding: var(--spacing-xxl) var(--spacing-xl);
+    }
+
+    .news-highlight {
+        max-width: 95%; /* Utilise 95% du main élargi */
+    }
+
+    .news-featured {
+        padding: var(--spacing-xxl);
+    }
+
+    .news-images {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: var(--spacing-xl);
+        margin: var(--spacing-xl) 0;
+    }
+
+    .news-img {
+        height: 120px !important; /* Plus hautes sur desktop */
+    }
+
+    /* Galerie photos Kian en 3 colonnes sur desktop */
+    .photo-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1.5rem !important;
+        margin: 2rem 0 !important;
+    }
+
+    .kian-photo {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover !important;
+        border-radius: 12px !important;
+        transition: transform 0.3s ease !important;
+    }
+
+    .kian-photo:hover {
+        transform: scale(1.05) !important;
+    }
+
+    /* Sections plus aérées sur desktop */
+    .section {
+        padding: var(--spacing-xxl) var(--spacing-xl);
+        margin: var(--spacing-xl) 0;
+    }
+
     .contact-details,
     .home-features-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: var(--spacing-lg);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-xl);
+        max-width: none; /* Pas de limite, utilise tout l'espace */
+        margin: 0 auto;
+    }
+
+    /* About section plus spacieuse */
+    .about {
+        max-width: none; /* Pas de limite, utilise tout l'espace */
+        margin: 0 auto;
+        padding: var(--spacing-xxl);
+    }
+
+    /* OVERRIDE DESKTOP : Supprime toutes les limites max-width restantes */
+    body .section {
+        max-width: none; /* Force la largeur complète sur desktop */
+    }
+
+    /* Menu card desktop styling */
+    .menu-card {
+        padding: var(--spacing-xl);
+        margin: var(--spacing-lg) auto;
     }
     
     .footer-content {
@@ -1963,6 +2145,9 @@ body.contact-page .page-card article:last-child {
 
 .home-feature-item {
     text-align: center;
+    border: 2px solid var(--alpine-brown-dark);
+    border-radius: 12px;
+    padding: var(--spacing-lg);
 }
 
 .home-feature-item h4 {
@@ -1974,6 +2159,7 @@ body.contact-page .page-card article:last-child {
 .home-feature-item p {
     color: var(--alpine-black);
 }
+
 
 .home-preview {
     cursor: pointer;
@@ -2050,19 +2236,120 @@ body.contact-page .page-card article:last-child {
 }
 
 /* ============================
+   LATEST NEWS SECTION STYLES
+   ============================ */
+
+.latest-news {
+    background: var(--alpine-cream);
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.news-highlight {
+    max-width: 95%; /* Utilise 95% de l'espace disponible */
+    margin: 0 auto;
+}
+
+.news-featured {
+    background: var(--alpine-white);
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+    box-shadow: 0 4px 20px rgba(65, 53, 43, 0.1);
+}
+
+.news-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.news-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--alpine-brown-dark);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: var(--alpine-brown-light);
+    font-weight: 500;
+}
+
+.news-content p {
+    color: var(--alpine-brown-dark);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.news-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.news-img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.news-img:hover {
+    transform: scale(1.05);
+}
+
+.btn-link {
+    display: inline-block;
+    color: var(--alpine-brown-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+    color: var(--alpine-brown-dark);
+}
+
+/* Mobile news optimizations */
+@media (max-width: 480px) {
+    .news-header {
+        text-align: center;
+    }
+
+    .news-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .news-images {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xs);
+    }
+
+    .news-img {
+        height: 60px;
+    }
+}
+
+/* ============================
    MENU PAGE STYLES
    ============================ */
 
 .menu-card {
     background-color: var(--alpine-brown-light);
-    width: 75%;
-    max-width: 900px;
-    margin: 2rem auto;
+    width: 100%;
+    margin: var(--spacing-md) auto;
     border-radius: 20px;
-    padding: 3rem;
+    padding: var(--spacing-xl);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     color: var(--alpine-black);
     font-family: var(--font-main);
+    box-sizing: border-box;
 }
 
 .menu-card h1 {
@@ -2227,3 +2514,4 @@ body.contact-page .page-card article:last-child {
     color: var(--alpine-black);
     line-height: 1.7;
 }
+

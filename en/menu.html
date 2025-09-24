@@ -55,7 +55,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-49Z27M7V6G"></script>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../alpine-design-system.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -98,136 +98,187 @@
     <!-- Header -->
     <div id="header-placeholder"></div>
 
-    <main id="main-content">
-        <div class="menu-card">
-            
-            <!-- Hero Section -->
-            <h1>Our Menu</h1>
-
-            <!-- Signature Cocktails -->
-            <section class="menu-section">
-                <h2>🍸 Signature Cocktails</h2>
-                
-                <div class="menu-category">
-                    <h3>Alpine Creations</h3>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Alpine Spritz</h4>
-                            <p>Maison M genepi liqueur, Savoie vermouth, local cremant, fresh Alpine herbs</p>
-                        </div>
-                        <span class="item-price">€12</span>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Reblochon Tart</h4>
-                            <p>Premium pear vodka, reblochon cheese infusion, local honey, fresh rosemary</p>
-                        </div>
-                        <span class="item-price">€14</span>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Mont Blanc</h4>
-                            <p>Artisanal pistachio distillate, white chocolate ganache, fresh cream, vanilla</p>
-                        </div>
-                        <span class="item-price">€14</span>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Glacier Express</h4>
-                            <p>High-altitude gin, elderflower, lime, glacier water, juniper berries</p>
-                        </div>
-                        <span class="item-price">€13</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Christian Drouin Collaboration -->
-            <section class="menu-section">
-                <div class="menu-category">
-                    <h2>🥃 Christian Drouin Partnership</h2>
-                    <div class="collaboration-note">Founded in 1960, Maison Christian Drouin is located in the heart of Pays d'Auge. It perpetuates a family savoir-faire combining tradition and innovation, with rigorous apple selection and artisanal distillation in small stills. From calvados to gins, each creation expresses the richness of Norman terroir, offering elegant, complex and authentic spirits.</div>
-                </div>
-                
-                <div class="menu-category">
-                    <h3>Exclusive Cocktails</h3>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Norman Alps</h4>
-                            <p>Christian Drouin VSOP calvados, Alpine honey, fresh thyme, lemon zest</p>
-                        </div>
-                        <span class="item-price">€16</span>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Pays d'Auge Sour</h4>
-                            <p>Christian Drouin XO, local pear juice, amaretto, egg white, bitters</p>
-                        </div>
-                        <span class="item-price">€18</span>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Réserve Tasting</h4>
-                            <p>Christian Drouin Réserve Pays d'Auge, served neat with Alpine cheese pairing</p>
-                        </div>
-                        <span class="item-price">€22</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Classic Cocktails -->
-            <section class="menu-section">
-                <h2>Classic Cocktails</h2>
-                
-                <div class="menu-category">
-                    <h3>Timeless Favorites</h3>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Old Fashioned</h4>
-                            <p>Premium bourbon, sugar, Angostura bitters, orange peel</p>
-                        </div>
-                        <span class="item-price">€11</span>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Negroni</h4>
-                            <p>London Dry gin, Campari, sweet vermouth, orange twist</p>
-                        </div>
-                        <span class="item-price">€10</span>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <div class="item-info">
-                            <h4>Whiskey Sour</h4>
-                            <p>Bourbon whiskey, fresh lemon juice, simple syrup, egg white</p>
-                        </div>
-                        <span class="item-price">€12</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Information -->
-            <section class="commitment-section">
-                <h3>🌱 Our Commitment</h3>
-                <p>All our ingredients are sourced within 50km of Annecy. We work exclusively with local producers and prioritize organic and sustainable products to offer you an authentic Alpine experience while respecting our environment.</p>
-            </section>
-            
+    <main class="container" id="main-content">
+        <div class="card card--primary text-center mb-8">
+            <h1 class="text-display">Our Menu</h1>
         </div>
+
+        <!-- Alpine x Christian Drouin -->
+        <section class="card card--primary mb-8">
+            <h2 class="text-headline mb-8">Alpine × Christian Drouin</h2>
+            <div class="card card--subtle mb-8">
+                <p class="text-body">Founded in 1960, Maison Christian Drouin is located in the heart of Pays d'Auge. It perpetuates a family savoir-faire combining tradition and innovation, with rigorous apple selection and artisanal distillation in small stills. From calvados to gins, each creation expresses the richness of Norman terroir, offering elegant, complex and authentic spirits.</p>
+            </div>
+
+            <h3 class="text-title mb-4">Seasonal Cocktails</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Highball Contest</h4>
+                        <p>Christian Drouin La Blanche apple brandy, chamomile, honey, cider vinegar, sparkling water</p>
+                    </div>
+                    <span class="product-price">12€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Jamaican Cafe Calva</h4>
+                        <p>Christian Drouin VSOP calvados, jamaican rum, coffee, brown sugar, vanilla</p>
+                    </div>
+                    <span class="product-price">13€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Bourdaloue</h4>
+                        <p>Christian Drouin XO calvados, pear, almond, vanilla, lemon</p>
+                    </div>
+                    <span class="product-price">13€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Fall Fashioned</h4>
+                        <p>Christian Drouin VSOP calvados, maple syrup, orange, cinnamon, bitters</p>
+                    </div>
+                    <span class="product-price">14€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Calvados Tasting Platter</h4>
+                        <p>2cl Christian Drouin Réserve Pays d'Auge, 2cl Christian Drouin VSOP, 2cl Christian Drouin XO</p>
+                    </div>
+                    <span class="product-price">16€</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Cocktails -->
+        <section class="card card--primary mb-8">
+            <h2 class="text-headline mb-8">🍸 Signature Cocktails</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Alpine Spritz</h4>
+                        <p>Maison M genepi, Mulassano Extra Dry vermouth, lemon, Savoie cremant, sparkling water</p>
+                    </div>
+                    <span class="product-price">12€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Red Clover</h4>
+                        <p>Altitude dry gin, Mulassano Bianco vermouth, raspberry, lemon, green shiso foam</p>
+                    </div>
+                    <span class="product-price">13€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Crossbill</h4>
+                        <p>Domaine des Hautes Glaces Vulson rye brandy, Maison M gentian, cherry, lime, grapefruit soda</p>
+                    </div>
+                    <span class="product-price">13€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Reblochon Tart</h4>
+                        <p>St Esprit pear vodka, reblochon, honey, rosemary, lemon, whole milk clarified, reblochon foam</p>
+                    </div>
+                    <span class="product-price">14€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Mont Blanc</h4>
+                        <p>Strato pistachio distillate, lemon, lime, white chocolate, heavy cream, emulsifier, sparkling water</p>
+                    </div>
+                    <span class="product-price">14€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Golden Eagle</h4>
+                        <p>Domaine des Hautes Glaces Indigène whisky, VS cognac, Adriatico amaretto, Mulassano Rosso vermouth, Maison M elixir, bitters</p>
+                    </div>
+                    <span class="product-price">15€</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Softs & Mocktails -->
+        <section class="card card--primary mb-8">
+            <h2 class="text-headline mb-8">🥤 Softs & Mocktails</h2>
+
+            <h3 class="text-title mb-4">Mocktails</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Green Detox</h4>
+                        <p>Fresh mint, apple, cucumber, honey, lime, vinegar</p>
+                    </div>
+                    <span class="product-price">7€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Tropical Storm</h4>
+                        <p>Pineapple, passion fruit, orgeat, ginger soda, bitters</p>
+                    </div>
+                    <span class="product-price">7€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Bleeding Heart</h4>
+                        <p>Tomato, elderflower, verbena, lemon, vinegar, whole milk clarified</p>
+                    </div>
+                    <span class="product-price">7€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Liquid Pastry</h4>
+                        <p>Basil, raspberry, almond, white chocolate, heavy cream, emulsifier</p>
+                    </div>
+                    <span class="product-price">7€</span>
+                </div>
+            </div>
+
+            <h3 class="text-title mb-4">Other Soft Drinks</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>House-made Sodas</h4>
+                        <p>Cola, Tonic, Ginger, Grapefruit</p>
+                    </div>
+                    <span class="product-price">3€</span>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-info">
+                        <h4>Organic Apple Juice Alain Milliat</h4>
+                        <p>18cl</p>
+                    </div>
+                    <span class="product-price">3€50</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information -->
+        <section class="card card--primary mb-8">
+            <h3 class="text-title">🌱 Our Commitment</h3>
+            <p class="text-body--lg">All our ingredients are sourced within 50km of Annecy. We work exclusively with local producers and prioritize organic and sustainable products to offer you an authentic Alpine experience while respecting our environment.</p>
+        </section>
     </main>
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     <script src="../cookie-banner.js?v=2025091301"></script>
     <script src="../reviews-widget.js"></script>
 </body>
